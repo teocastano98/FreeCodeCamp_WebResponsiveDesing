@@ -5,10 +5,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
-  <title></title>
+  <title>Survey Form</title>
 </head>
 
 <body>
+
+  <h1 id="title">Registration Form</h1>
+  <p id="description">Sign up to be part of our group</p>
+
+  <form action="" id="survey-form">
+
+    <label for="name" id="name-label">Name
+      <input type="text" id="name" required placeholder="Enter your name">
+    </label>
+
+    <label for="email" id="email-label">email
+      <input id="email" type="email" required placeholder="Enter your email">
+    </label>
+
+    <label for="number" id="number-label">age
+      <input type="number" id="number" min="18" max="100" placeholder="Enter your age">
+    </label>
+
+    <label for="dropdown">Indicate you sex
+      <select name="" id="dropdown">
+        <option value="">Select one</option>
+        <option value="">Female</option>
+        <option value="">Male</option>
+      </select>
+    </label>
+
+    <label for="student">What is your role?
+      <input id="student" type="radio" name="type-role" class="inline" checked value="role" /> Student
+    </label>
+
+    <label for="enployed">
+      <input id="enployed" type="radio" name="type-role" class="inline" value="role" /> enployed
+    </label>
+
+    <label for="modality">
+      <input id="modality" type="checkbox" name="modality" value="modality">Virtual</input>
+    </label>
+    <label>
+      <input id="modality" type="checkbox" name="modality" value="modality">Remote</input>
+    </label>
+
+    <label for="bio">Provide bio
+      <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach.."></textarea>
+    </label>
+    <input type="submit" id="submit" value="submit">
+  </form>
+
 
 </body>
 
